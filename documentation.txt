@@ -1,0 +1,49 @@
+- PRODUCT -
+
+GET '/product/filter/<string:category>/colour/<string:colour>
+
+GET '/product/filter/<string:category>/size/<string:size>
+
+POST '/product/filter/<string:category>/price
+
+{
+    "price_min": "1000",
+    "price_max": "50000"
+}
+
+GET '/product/filter/<string:category>'
+
+POST'/product/add
+
+{
+    "product_name": "kemeja lengan panjang polos",
+    "product_colour": "merah",
+    "product_size": "L",
+    "product_price": 25000,
+    "category_id": 1112
+}
+
+GET '/product/<int:product_id>
+
+DELETE '/product/<int:product_id>
+
+- CATEGORIES -
+GET '/category'
+
+GET '/category/<int:category_id>'
+
+GET '/category/child/<int:category_id>'
+
+DELETE '/category/<int:category_id>'
+
+POST '/category/add'
+{
+	'category_id': 12345
+	'category_name': 'kemeja'
+}
+
+
+
+
+
+
